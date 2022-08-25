@@ -494,7 +494,7 @@ function d2Post(apiResource, data, serverInfo) {
 		}
 	}, function (error, response, data) {
 		if (!error && response.statusCode === 200) {
-			deferred.resolve(data);
+			deferred.resolve(data.response);
 		}
 		else {
 			console.log("Error in POST");
